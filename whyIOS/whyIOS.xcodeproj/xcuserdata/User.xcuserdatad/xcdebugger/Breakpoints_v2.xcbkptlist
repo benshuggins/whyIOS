@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "whyIOS/Model Controllers/PostController.swift"
+            timestampString = "571274067.770323"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchPosts(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static whyIOS.PostController.fetchPosts(completion: (Swift.Optional&lt;Swift.Array&lt;whyIOS.Post&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "whyIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/User/Desktop/devMOUNTAINSTRUCTURE/DevMountian%20iOS%20Course/Anchor%20Point%203/Anchor%20Point%203%20Projects/Solo%20Projects/Why%20iOS%3F/whyIOS/whyIOS/Model%20Controllers/PostController.swift"
+                  timestampString = "571212087.2400711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1378">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((key: Swift.String, value: whyIOS.Post)) -&gt; Swift.Optional&lt;whyIOS.Post&gt; in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static whyIOS.PostController.fetchPosts(completion: (Swift.Optional&lt;Swift.Array&lt;whyIOS.Post&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "whyIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/User/Desktop/devMOUNTAINSTRUCTURE/DevMountian%20iOS%20Course/Anchor%20Point%203/Anchor%20Point%203%20Projects/Solo%20Projects/Why%20iOS%3F/whyIOS/whyIOS/Model%20Controllers/PostController.swift"
+                  timestampString = "571212087.245276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "114">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

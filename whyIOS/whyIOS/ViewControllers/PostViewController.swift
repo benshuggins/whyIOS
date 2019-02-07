@@ -14,6 +14,7 @@ class PostViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refresh()
 
     }
 

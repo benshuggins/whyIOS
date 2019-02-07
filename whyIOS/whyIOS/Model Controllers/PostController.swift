@@ -15,10 +15,10 @@ class PostController{
     
     static func fetchPosts(completion: @escaping (([Post]?) -> Void)) {
         
-    
-    guard var unwrappedURL = baseURL else {completion(nil);return }
-    unwrappedURL.appendPathExtension("json")
-    var urlRequest = URLRequest(url: unwrappedURL)
+        
+        guard var unwrappedURL = baseURL else {completion(nil);return }
+        unwrappedURL.appendPathExtension("json")
+        var urlRequest = URLRequest(url: unwrappedURL)
         
         urlRequest.httpMethod = "GET"
         
@@ -30,11 +30,11 @@ class PostController{
             }
             guard let data = data else {
                 print("there was no data")
-                completion(nil)
+                completion(nil) 
                 return
             }
             do {
-              let jsonDecoder = JSONDecoder()
+                let jsonDecoder = JSONDecoder()
                 let postsDictionary = try jsonDecoder.decode([String:Post].self, from: data)
                 let posts = postsDictionary.compactMap { $1 }
                 completion(posts)
@@ -46,29 +46,29 @@ class PostController{
                 return
                 
             }
-        }.resume()
-    
-    }
-    
-   static func postReason(name: String, reason: String, cohort: String, completion: @escaping ((Bool) -> Void)) {
+            }.resume()
         
-        guard var fullURL = baseURL else {completion(false); return}
-       let getterEndpoint = fullURL.appendingPathExtension("json")
-    
-    let post = Post(name: name, reason: reason, cohort: cohort)
-    
-    var postData: Data
-   
-    do{
-        let jsonEncoder = JSONEncoder()
-        postData = try jsonEncoder.encode(post)
-        completion(true)
-    }catch {
-        print("error \(error.localizedDescription)")
-        completion(false)
-        return
     }
- 
+    
+    static func postReason(name: String, reason: String, cohort: String, completion: @escaping ((Bool) -> Void)) {
+        
+        guard let fullURL = baseURL else {completion(false); return}
+        let getterEndpoint = fullURL.appendingPathExtension("json")
+        
+        let post = Post(name: name, reason: reason, cohort: cohort)
+        
+        var postData: Data
+        
+        do{
+            let jsonEncoder = JSONEncoder()
+            postData = try jsonEncoder.encode(post)
+            completion(true)
+        }catch {
+            print("error \(error.localizedDescription)")
+            completion(false)
+            return
+        }
+        
         var urlRequest = URLRequest(url: getterEndpoint)
         urlRequest.httpMethod = "POST"
         urlRequest.httpBody = postData
@@ -79,13 +79,13 @@ class PostController{
                 completion(false)
                 return
             }
-           
-            }
-        dataTask.resume()
+            
         }
-    
-        
+        dataTask.resume()
     }
+    
+    
+}
 
 
 
